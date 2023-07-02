@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Incribir incidentes</title>
+    <link rel="stylesheet" type="text/css" href="css/Stylemenu.css">
+    <link rel="stylesheet" type="text/css" href="css/StyleFormularioIncidentes.css">
+    <script>
+        function guardar() {
+            // Lógica para guardar el formulario
+        }
+
+        function cancelar() {
+            // Lógica para cancelar el formulario
+        }
+    </script>
+
+</head>
+<body>
+
+    <div class="centered-image-container">
+        <img src="img/LogoAntay.jpeg" alt="Logo Casino Antay">
+    </div>
+
+    <ul id="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="estadistica.html">Estadísticas</a></li>
+        <li><a href="#">Mis datos</a></li>
+        <li><a href="#">Ingreso de Incidentes</a></li>
+        <li><a href="index.html">Cerrar Sesión</a></li>
+    </ul>
+
+    <div class="form-container">
+        <div class="form-group">
+            <label for="incidente">Incidente:</label>
+            <input type="text" id="incidente" name="incidente">
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha:</label>
+            <input type="text" id="fecha" name="fecha">
+        </div>
+        <div class="form-group">
+            <label for="area">Área:</label>
+            <input type="text" id="area" name="area">
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="motivo">Motivo:</label>
+            <input type="text" id="motivo" name="motivo">
+        </div>
+        <div class="form-group">
+            <label for="estado">Estado:</label>
+            <div class="status-bar no-iniciado"></div>
+        </div>
+        <div class="button-container">
+            <button onclick="guardar()">Guardar</button>
+            <button onclick="cancelar()">Cancelar</button>
+        </div>
+    </div>
+
+</body>
+</html>

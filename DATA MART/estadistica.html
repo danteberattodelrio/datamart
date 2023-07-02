@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Estadistica</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/Stylemenu.css">
+    <link rel="stylesheet" type="text/css" href="css/StylemenuDropdown.css">
+    <link rel="stylesheet" type="text/css" href="css/StylemenuFecha.css">
+
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                maxDate: 0 // Permite seleccionar solo fechas pasadas o iguales a la fecha actual
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+    <div class="centered-image-container">
+        <img src="img/LogoAntay.jpeg" alt="Logo Casino Antay">
+    </div>
+
+    <ul id="menu">
+        <li><a href="#">Inicio</a></li>
+        <div class="dropdown">
+            <button class="dropbtn">Área</button>
+            <div class="dropdown-content">
+                <a href="#">Bar</a>
+                <a href="#">Sala de Juegos</a>
+                <a href="#">Restaurante</a>
+                <a href="#">Hotel</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Fecha</button>
+            <div class="dropdown-content">
+                <input type="text" id="datepicker" placeholder="Seleccionar fecha">
+            </div>
+        </div>
+        <li><a href="#">Ingreso de Incidentes</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+    </ul>
+
+
+</body>
+</html>

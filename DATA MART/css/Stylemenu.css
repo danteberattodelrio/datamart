@@ -1,0 +1,32 @@
+﻿/* Estilos del contenedor del logo */
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Estilos del menú */
+#menu {
+    list-style-type: none;
+    margin: 50px auto;
+    padding: 0;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+    #menu li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+        #menu li a {
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            #menu li a:hover {
+                background-color: #ff6a00;
+            }

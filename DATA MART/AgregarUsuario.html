@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/Stylemenu.css">
+    <link rel="stylesheet" type="text/css" href="css/StyleAgregarUsuario.css">
+</head>
+<body>
+
+    <div class="centered-image-container">
+        <img src="img/LogoAntay.jpeg" alt="Logo Casino Antay">
+    </div>
+
+    <ul id="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="estadistica.html">Estadísticas</a></li>
+        <li><a href="#">Mis datos</a></li>
+        <li><a href="#">Ingreso de Incidentes</a></li>
+        <li><a href="index.html">Cerrar Sesión</a></li>
+    </ul>
+
+
+    <div class="form-container">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+        </div>
+        <div class="form-group">
+            <label for="rut">RUT:</label>
+            <input type="text" id="rut" name="rut">
+        </div>
+        <div class="form-group">
+            <label for="cargo">Cargo/Categoría:</label>
+            <input type="text" id="cargo" name="cargo">
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo">
+        </div>
+        <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena">
+        </div>
+        <div class="button-container">
+            <button onclick="agregarUsuario()">Agregar</button>
+            <button onclick="cancelar()">Cancelar</button>
+        </div>
+    </div>
+
+    <script>
+        function agregarUsuario() {
+            // Obtener los valores de los campos del formulario
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var rut = document.getElementById("rut").value;
+            var cargo = document.getElementById("cargo").value;
+            var correo = document.getElementById("correo").value;
+            var contrasena = document.getElementById("contrasena").value;
+
+            // Aquí puedes agregar la lógica para guardar el usuario en la base de datos o realizar cualquier otra acción necesaria
+
+            // Limpiar los campos del formulario
+            document.getElementById("nombre").value = "";
+            document.getElementById("apellido").value = "";
+            document.getElementById("rut").value = "";
+            document.getElementById("cargo").value = "";
+            document.getElementById("correo").value = "";
+            document.getElementById("contrasena").value = "";
+        }
+
+        function cancelar() {
+            // Limpiar los campos del formulario
+            document.getElementById("nombre").value = "";
+            document.getElementById("apellido").value = "";
+            document.getElementById("rut").value = "";
+            document.getElementById("cargo").value = "";
+            document.getElementById("correo").value = "";
+            document.getElementById("contrasena").value = "";
+        }
+    </script>
+
+</body>
+</html>
